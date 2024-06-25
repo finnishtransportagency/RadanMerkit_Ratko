@@ -1,5 +1,7 @@
 import os
 from dotenv import load_dotenv
+load_dotenv()
+
 from docopt import docopt
 from utils import file_utils
 from excel_transformer import ExcelTransformer
@@ -37,5 +39,4 @@ def main():
             transformer.transform_excel()
 
 if __name__ == "__main__":
-    load_dotenv()
     main()
